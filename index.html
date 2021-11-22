@@ -1,42 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!--links for jquery libraries and style.css-->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
-  </head>
+</head>
 
-  <body>
-      <!-- Header -->
+<body>
+    <!-- Header -->
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+        <h1 class="display-3">Work Day Scheduler</h1>
+        <p class="lead">A simple calendar app for scheduling your work day</p>
+        <p id="currentDay" class="lead"></p>
     </header>
     <!-- End of Header -->
     <!-- Div Container for Timeblocks -->
     <div class="container">
-      <!-- Timeblocks go here -->
+        <!-- Timeblocks go here -->
+        <!--8AM timeblock-->
+        <div class="input-group input-group-lg" data-hour="8">
+            <div class="input-group-prepend">
+                <span class="input-group-text time-block block1"></span>
+            </div>
+            <input type="text" class="form-input form-8" aria-label="Large">
+            <!-- Save Button for submission of inputted data-->
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
+        </div>
+        <!--Copied first Div to create the rest with few edits to data entry for hour and class name changes -->
+        <!--9AM timeblock-->
+        <div class="input-group input-group-lg" data-hour="9">
+            <div class="input-group-prepend">
+                <span class="input-group-text time-block block2"></span>
+            </div>
+            <input type="text" class="form-input form-9" aria-label="Large">
+            <!-- Save Button for submission of inputted data-->
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
+        </div>
+        <!--10AM timeblock-->
+        <div class="input-group input-group-lg" data-hour="10">
+            <div class="input-group-prepend">
+                <span class="input-group-text time-block block3"></span>
+            </div>
+            <input type="text" class="form-input form-10" aria-label="Large">
+            <!-- Save Button for submission of inputted data-->
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
+        </div>
+        <!--11AM timeblock-->
+        <div class="input-group input-group-lg" data-hour="11">
+            <div class="input-group-prepend">
+                <span class="input-group-text time-block block4"></span>
+            </div>
+            <input type="text" class="form-input form-11" aria-label="Large">
+            <!-- Save Button for submission of inputted data-->
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
+        </div>
+        <!--12PM timeblock-->
+        <div class="input-group input-group-lg" data-hour="12">
+            <div class="input-group-prepend">
+                <span class="input-group-text time-block block5"></span>
+            </div>
+            <input type="text" class="form-input form-12" aria-label="Large">
+            <!-- Save Button for submission of inputted data-->
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
+        </div>
+        <!--1PM timeblock-->
+        <div class="input-group input-group-lg" data-hour="1">
+            <div class="input-group-prepend">
+                <span class="input-group-text time-block block6"></span>
+            </div>
+            <input type="text" class="form-input form-1" aria-label="Large">
+            <!-- Save Button for submission of inputted data-->
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
+        </div>
+        <!--2PM timeblock-->
+        <div class="input-group input-group-lg" data-hour="2">
+            <div class="input-group-prepend">
+                <span class="input-group-text time-block block7"></span>
+            </div>
+            <input type="text" class="form-input form-2" aria-label="Large">
+            <!-- Save Button for submission of inputted data-->
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
+        </div>
+        <!--3PM timeblock-->
+        <div class="input-group input-group-lg" data-hour="3">
+            <div class="input-group-prepend">
+                <span class="input-group-text time-block block8"></span>
+            </div>
+            <input type="text" class="form-input form-3" aria-label="Large">
+            <!-- Save Button for submission of inputted data-->
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
+        </div>
+        <!--4PM timeblock-->
+        <div class="input-group input-group-lg" data-hour="4">
+            <div class="input-group-prepend">
+                <span class="input-group-text time-block block9"></span>
+            </div>
+            <input type="text" class="form-input form-4" aria-label="Large">
+            <!-- Save Button for submission of inputted data-->
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
+        </div>
+        <!--5PM timeblock-->
+        <div class="input-group input-group-lg" data-hour="5">
+            <div class="input-group-prepend">
+                <span class="input-group-text time-block block10"></span>
+            </div>
+            <input type="text" class="form-input form-5" aria-label="Large">
+            <!-- Save Button for submission of inputted data-->
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
+        </div>
+        <!--6PM timeblock-->
+        <div class="input-group input-group-lg" data-hour="6">
+            <div class="input-group-prepend">
+                <span class="input-group-text time-block block11"></span>
+            </div>
+            <input type="text" class="form-input form-6" aria-label="Large">
+            <!-- Save Button for submission of inputted data-->
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
+        </div>
+
+
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+</body>
+
 </html>
