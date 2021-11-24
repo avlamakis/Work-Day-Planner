@@ -7,7 +7,7 @@ Created a work day scheduler to help keep organized during your work hours from 
 HTML(primary), CSS, JavaScript
 
 ## Contribution 
-Made by mysellf, Alexandros Vlamakis. Utilized the following resouruces on the project: 
+Made by mysellf, Alexandros Vlamakis. Utilized the following resources on the project: 
   -https://momentjs.com/
   
   -https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save
