@@ -22,128 +22,170 @@
         <p id="currentDay" class="lead"></p>
     </header>
     <!-- End of Header -->
-    <!-- Div Container for Timeblocks -->
-    <div class="container">
-        <!--using bootstrap form-group to help format the containers -->
-        <!-- Timeblocks go here -->
-        <!--8AM timeblock-->
-        <div class="input-group input-group-lg" data-hour="8">
-            <div class="input-group-prepend">
-                <span class="input-group-text time-block block1"></span>
+    <!-- div container for time blocks-->
+    <div class="container text-right  plannerDiv">
+        <div class="row row1 ">
+
+            <div class="  input-container input-group col-1 ">
+                <p class="border-bottom">
+                    9am
+                </p>
+
             </div>
-            <input type="text" class="form-input form-8" aria-label="Large">
-            <!-- Save Button for submission of inputted data-->
-            <button class="btn saveBtn"><i class="far fa-save"></i></button>
-            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
-        </div>
-        <!--Copied first Div to create the rest with few edits to data entry for hour and class name changes -->
-        <!--9AM timeblock-->
-        <div class="input-group input-group-lg" data-hour="9">
-            <div class="input-group-prepend">
-                <span class="input-group-text time-block block2"></span>
+            <!-- copied each time block to create next hour div -->
+            <!--time blocks for each hour of the day-->
+            <div class="input-group  col-10 form-group">
+                <textarea id=time9AM class="form-control custom-control textborder" rows="2" style="resize:none"
+                    name="1"></textarea>
+                <!-- utilized w3 for the save icon reference https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
+                <button class="col-1 btn"><span style="font-size: 2.5em; color: black "><i class="fa fa-save"></i></span>
+                </button>
+
             </div>
-            <input type="text" class="form-input form-9" aria-label="Large">
-            <!-- Save Button for submission of inputted data-->
-            <button class="btn saveBtn"><i class="far fa-save"></i></button>
-            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
-        </div>
-        <!--10AM timeblock-->
-        <div class="input-group input-group-lg" data-hour="10">
-            <div class="input-group-prepend">
-                <span class="input-group-text time-block block3"></span>
-            </div>
-            <input type="text" class="form-input form-10" aria-label="Large">
-            <!-- Save Button for submission of inputted data-->
-            <button class="btn saveBtn"><i class="far fa-save"></i></button>
-            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
-        </div>
-        <!--11AM timeblock-->
-        <div class="input-group input-group-lg" data-hour="11">
-            <div class="input-group-prepend">
-                <span class="input-group-text time-block block4"></span>
-            </div>
-            <input type="text" class="form-input form-11" aria-label="Large">
-            <!-- Save Button for submission of inputted data-->
-            <button class="btn saveBtn"><i class="far fa-save"></i></button>
-            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
-        </div>
-        <!--12PM timeblock-->
-        <div class="input-group input-group-lg" data-hour="12">
-            <div class="input-group-prepend">
-                <span class="input-group-text time-block block5"></span>
-            </div>
-            <input type="text" class="form-input form-12" aria-label="Large">
-            <!-- Save Button for submission of inputted data-->
-            <button class="btn saveBtn"><i class="far fa-save"></i></button>
-            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
-        </div>
-        <!--1PM timeblock-->
-        <div class="input-group input-group-lg" data-hour="1">
-            <div class="input-group-prepend">
-                <span class="input-group-text time-block block6"></span>
-            </div>
-            <input type="text" class="form-input form-1" aria-label="Large">
-            <!-- Save Button for submission of inputted data-->
-            <button class="btn saveBtn"><i class="far fa-save"></i></button>
-            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
-        </div>
-        <!--2PM timeblock-->
-        <div class="input-group input-group-lg" data-hour="2">
-            <div class="input-group-prepend">
-                <span class="input-group-text time-block block7"></span>
-            </div>
-            <input type="text" class="form-input form-2" aria-label="Large">
-            <!-- Save Button for submission of inputted data-->
-            <button class="btn saveBtn"><i class="far fa-save"></i></button>
-            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
-        </div>
-        <!--3PM timeblock-->
-        <div class="input-group input-group-lg" data-hour="3">
-            <div class="input-group-prepend">
-                <span class="input-group-text time-block block8"></span>
-            </div>
-            <input type="text" class="form-input form-3" aria-label="Large">
-            <!-- Save Button for submission of inputted data-->
-            <button class="btn saveBtn"><i class="far fa-save"></i></button>
-            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
-        </div>
-        <!--4PM timeblock-->
-        <div class="input-group input-group-lg" data-hour="4">
-            <div class="input-group-prepend">
-                <span class="input-group-text time-block block9"></span>
-            </div>
-            <input type="text" class="form-input form-4" aria-label="Large">
-            <!-- Save Button for submission of inputted data-->
-            <button class="btn saveBtn"><i class="far fa-save"></i></button>
-            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
-        </div>
-        <!--5PM timeblock-->
-        <div class="input-group input-group-lg" data-hour="5">
-            <div class="input-group-prepend">
-                <span class="input-group-text time-block block10"></span>
-            </div>
-            <input type="text" class="form-input form-5" aria-label="Large">
-            <!-- Save Button for submission of inputted data-->
-            <button class="btn saveBtn"><i class="far fa-save"></i></button>
-            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
-        </div>
-        <!--6PM timeblock-->
-        <div class="input-group input-group-lg" data-hour="6">
-            <div class="input-group-prepend">
-                <span class="input-group-text time-block block11"></span>
-            </div>
-            <input type="text" class="form-input form-6" aria-label="Large">
-            <!-- Save Button for submission of inputted data-->
-            <button class="btn saveBtn"><i class="far fa-save"></i></button>
-            <!-- Obtained save icon from W3 schools at this link: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
         </div>
 
 
+        <div class="row row2 ">
+            <!-- Utilized bootstrap for input-group to format each row with btn and text inputs https://getbootstrap.com/docs/4.0/components/input-group/ -->
+            <div class="input-group input-container  col-1">
+                <p class="border-bottom">
+                    10am
+                </p>
+
+            </div>
+            <div class="input-group col-10 form-group">
+                <textarea id=time10AM class="form-control custom-control textborder" rows="2" style="resize:none"
+                    name="2">
+                </textarea>
+
+                <button class="col-1 btn"><span style="font-size: 2.5em; color: black "><i class="fa fa-save"></i></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="row  row3">
+
+            <div class="input-group  col-1">
+                <p class="border-bottom">
+                    11am
+                </p>
+
+            </div>
+            <div class="input-group col-10 form-group">
+                <textarea id=time11AM class="form-control custom-control textborder" rows="2" style="resize:none"
+                    name="3"></textarea>
+                <button class="col-1 btn"><span style="font-size: 2.5em; color: black "><i class="fa fa-save"></i></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="row row4  ">
+
+            <div class="input-group  col-1">
+                <p class="border-bottom">
+                    12pm
+                </p>
+
+            </div>
+            <div class="input-group col-10 form-group">
+                <textarea id=time12PM class="form-control custom-control textborder" rows="2" style="resize:none"
+                    name="4"></textarea>
+                <button class="col-1 btn"><span style="font-size: 2.5em; color: black "><i class="fa fa-save"></i></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="row row5">
+
+            <div class="input-group col-1">
+                <p class="border-bottom">
+                    1pm
+                </p>
+
+            </div>
+            <div class="input-group col-10 form-group">
+                <textarea id=time1PM class="form-control custom-control textborder" rows="2" style="resize:none"
+                    name="5"></textarea>
+                <button class="col-1 btn"><span style="font-size: 2.5em; color: black "><i class="fa fa-save"></i></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="row row6">
+
+            <div class="input-group col-1">
+                <p class="border-bottom">
+                    2pm
+                </p>
+
+            </div>
+            <div class="input-group col-10 form-group">
+                <textarea id=time2PM class="form-control custom-control textborder" rows="2" style="resize:none"
+                    name="6"></textarea>
+                <button class="col-1 btn"><span style="font-size: 2.5em; color: black "><i class="fa fa-save"></i></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="row row7">
+
+            <div class="input-group col-1">
+                <p class="border-bottom">
+                    3pm
+                </p>
+
+            </div>
+            <div class="input-group col-10 form-group">
+                <textarea id=time3PM class="form-control custom-control textborder" rows="2" style="resize:none"
+                    name="7"></textarea>
+                <button class="col-1 btn"><span style="font-size: 2.5em; color: black "><i class="fa fa-save"></i></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="row row8">
+
+            <div class="input-group col-1">
+                <p class="border-bottom">
+                    4pm
+                </p>
+
+            </div>
+            <div class="input-group col-10 form-group">
+                <textarea id=time4PM class="form-control custom-control textborder" rows="2" style="resize:none"
+                    name="8"></textarea>
+                <button class="col-1 btn"><span style="font-size: 2.5em; color: black "><i class="fa fa-save"></i></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="row row9">
+
+            <div class="input-group col-1">
+                <p class="border-bottom">
+                    5pm
+                </p>
+
+            </div>
+            <div class="input-group col-10 form-group">
+                <textarea id=time5PM class="textborder form-control custom-control" rows="2" style="resize:none"
+                    name="9"></textarea>
+                <button class="col-1 btn"><span style="font-size: 2.5em; color: black "><i class="fa fa-save"></i></span>
+                </button>
+            </div>
+        </div>
 
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
