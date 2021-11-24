@@ -1,42 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!--links for jquery libraries and style.css-->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
-  </head>
+</head>
 
-  <body>
-      <!-- Header -->
+<body>
+    <!-- Header -->
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+        <h1 class="display-3">Work Day Scheduler</h1>
+        <p class="lead">A simple calendar app for scheduling your work day</p>
+        <p class="lead todaysDate"></p>
     </header>
     <!-- End of Header -->
-    <!-- Div Container for Timeblocks -->
-    <div class="container">
-      <!-- Timeblocks go here -->
+    <!-- div container for time blocks-->
+    <div class="container text-right  plannerDiv">
+        <div class="row row1">
+
+            <div class="input-container input-group col-1 ">
+                <p class="border-bottom">
+                    9am
+                </p>
+
+            </div>
+            <!-- copied each time block to create next hour div -->
+            <!--time blocks for each hour of the day-->
+            <div class="input-group  col-10 form-group">
+                <textarea id=time9AM class="form-control custom-control textborder" rows="2" style="resize:none"
+                    name="9"></textarea>
+                    <!--name classification done in military time-->
+                <!-- utilized w3 for the save icon reference https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-save -->
+                <button class="col-1 saveBtn"><span style="font-size: 2.5em; color: white "><i class="fa fa-save"></i></span>
+                </button>
+
+            </div>
+        </div>
+
+
+        <div class="row row2 ">
+            <!-- Utilized bootstrap for input-group to format each row with btn and text inputs https://getbootstrap.com/docs/4.0/components/input-group/ -->
+            <div class="input-group input-container  col-1">
+                <p class="border-bottom">
+                    10am
+                </p>
+
+            </div>
+            <div class="input-group col-10 form-group">
+                <textarea id=time10AM class="form-control custom-control textborder" rows="2" style="resize:none"
+                    name="10">
+                </textarea>
+
+                <button class="col-1 saveBtn"><span style="font-size: 2.5em; color: white "><i class="fa fa-save"></i></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="row  row3">
+
+            <div class="input-group  col-1">
+                <p class="border-bottom">
+                    11am
+                </p>
+
+            </div>
+            <div class="input-group col-10 form-group">
+                <textarea id=time11AM class="form-control custom-control textborder" rows="2" style="resize:none"
+                    name="11"></textarea>
+                <button class="col-1 saveBtn"><span style="font-size: 2.5em; color: white "><i class="fa fa-save"></i></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="row row4  ">
+
+            <div class="input-group  col-1">
+                <p class="border-bottom">
+                    12pm
+                </p>
+
+            </div>
+            <div class="input-group col-10 form-group">
+                <textarea id=time12PM class="form-control custom-control textborder" rows="2" style="resize:none"
+                    name="12"></textarea>
+                <button class="col-1 saveBtn"><span style="font-size: 2.5em; color: white "><i class="fa fa-save"></i></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="row row5">
+
+            <div class="input-group col-1">
+                <p class="border-bottom">
+                    1pm
+                </p>
+
+            </div>
+            <div class="input-group col-10 form-group">
+                <textarea id=time1PM class="form-control custom-control textborder" rows="2" style="resize:none"
+                    name="13"></textarea>
+                <button class="col-1 saveBtn"><span style="font-size: 2.5em; color: white "><i class="fa fa-save"></i></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="row row6">
+
+            <div class="input-group col-1">
+                <p class="border-bottom">
+                    2pm
+                </p>
+
+            </div>
+            <div class="input-group col-10 form-group">
+                <textarea id=time2PM class="form-control custom-control textborder" rows="2" style="resize:none"
+                    name="14"></textarea>
+                <button class="col-1 saveBtn"><span style="font-size: 2.5em; color: white "><i class="fa fa-save"></i></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="row row7">
+
+            <div class="input-group col-1">
+                <p class="border-bottom">
+                    3pm
+                </p>
+
+            </div>
+            <div class="input-group col-10 form-group">
+                <textarea id=time3PM class="form-control custom-control textborder" rows="2" style="resize:none"
+                    name="15"></textarea>
+                <button class="col-1 saveBtn"><span style="font-size: 2.5em; color: white "><i class="fa fa-save"></i></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="row row8">
+
+            <div class="input-group col-1">
+                <p class="border-bottom">
+                    4pm
+                </p>
+
+            </div>
+            <div class="input-group col-10 form-group">
+                <textarea id=time4PM class="form-control custom-control textborder" rows="2" style="resize:none"
+                    name="16"></textarea>
+                <button class="col-1 saveBtn"><span style="font-size: 2.5em; color: white "><i class="fa fa-save"></i></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="row row9">
+
+            <div class="input-group col-1">
+                <p class="border-bottom">
+                    5pm
+                </p>
+
+            </div>
+            <div class="input-group col-10 form-group">
+                <textarea id=time5PM class="textborder form-control custom-control" rows="2" style="resize:none"
+                    name="17"></textarea>
+                <button class="col-1 saveBtn"><span style="font-size: 2.5em; color: white "><i class="fa fa-save"></i></span>
+                </button>
+            </div>
+        </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+    <script src="assets/js/script.js"></script>
+</body>
+
 </html>

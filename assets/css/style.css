@@ -29,6 +29,11 @@ body {
     text-align: center;
     border-radius: 15px;
   }
+
+  .plannerDiv {
+    border-radius: 25px;
+    box-shadow: 2px black;
+  }
   
   .row {
     white-space: pre-wrap;
@@ -42,17 +47,17 @@ body {
     border-top: 1px dashed #000000;
   }
   
-  .past {
+  .bg-gray {
     background-color: #d3d3d3;
     color: white;
   }
   
-  .present {
+  .bg-red {
     background-color: #ff6961;
     color: white;
   }
   
-  .future {
+  .bg-green {
     background-color: #77dd77;
     color: white;
   }
@@ -68,5 +73,6 @@ body {
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
+    color: black;
   }
   
