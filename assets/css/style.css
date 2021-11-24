@@ -29,6 +29,11 @@ body {
     text-align: center;
     border-radius: 15px;
   }
+
+  .plannerDiv {
+    border-radius: 25px;
+    box-shadow: 2px black;
+  }
   
   .row {
     white-space: pre-wrap;
